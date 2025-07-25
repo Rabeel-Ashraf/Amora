@@ -12,6 +12,62 @@ Below is the **only** guide you need to get Amora (your anime-girl AI companion)
 
 ---
 
+Amora/                        # Root
+├── .github/                  # GitHub magic
+│   ├── workflows/            # CI (optional)
+│   │   └── build.yml
+│   ├── FUNDING.yml
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── SECURITY.md
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+├── app/                      # Android Studio module
+│   ├── build.gradle
+│   ├── proguard-rules.pro
+│   └── src/
+│       ├── main/
+│       │   ├── AndroidManifest.xml
+│       │   ├── java/com/amora/
+│       │   │   ├── ui/
+│       │   │   │   ├── ChatActivity.kt
+│       │   │   │   ├── FloatingBubbleService.kt
+│       │   │   │   ├── WaveView.kt
+│       │   │   │   └── ChatAdapter.kt
+│       │   │   ├── speech/
+│       │   │   │   ├── WakeWordDetector.kt
+│       │   │   │   ├── STTManager.kt
+│       │   │   │   └── TTSManager.kt
+│       │   │   ├── ai/
+│       │   │   │   └── OpenAIRepository.kt
+│       │   │   └── model/
+│       │   │       └── Message.kt
+│       │   ├── res/
+│       │   │   ├── drawable/
+│       │   │   │   ├── bg_gradient.xml
+│       │   │   │   ├── bg_bubble.xml
+│       │   │   │   ├── bg_bubble_user.xml
+│       │   │   │   ├── ic_mic_24.xml
+│       │   │   │   └── amora_chibi.png
+│       │   │   ├── layout/
+│       │   │   │   ├── activity_chat.xml
+│       │   │   │   └── item_message.xml
+│       │   │   ├── values/
+│       │   │   │   ├── strings.xml
+│       │   │   │   └── themes.xml
+│       │   │   └── raw/
+│       │   │       └── ambient_love.mp3
+│       │   └── assets/
+│       │       └── ggml-base.bin      # Whisper model
+├── build.gradle (Project)
+├── settings.gradle
+├── gradle.properties
+├── local.properties.example
+├── .gitignore
+├── LICENSE
+└── README.md                   # You are here ✨
+
 ## 1. Download the APK (only 20 MB)
 
 | Action | Animation |
